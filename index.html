@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-X-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+<body>
+    <h1>Javascript Aula pratica</h1>
+    <a href="#" onclick="mudarCor()">Clique para mudar a cor do titulo</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="subtitulo">CSS Cascading Style Sheets</h2>
+   <a href="#" onclick="mudaTexto()">Clique para mudar o texto do subtítulo </a>
+   <br>
+   <br>
+   <br>
+   <br>
+   <p class="paragrafo">A pratica leva a perfeição e a fixação do conteudo</p>
+   <a href="#" onclick="mudaAlinhamento()">Clique para mudar o alinhamento do texto do paragrafo.</a>
+   <br>
+   <br>
+   <br>
+   <br>
+    <script>
+
+        var titulo=document.getElementsByTagName("hq");
+        function mudarCor(){
+            if(titulo[0].style.color == "green"){
+                
+                titulo[0].style.color = "red";
+
+            }else if(titulo[0].style.color == "red"){
+                
+                titulo[0].style.color = "black";
+
+            }else{
+
+                titulo[0].style.color = "green";
+
+            }
+
+            var subtitulo = document.getElementById("subtitulo");
+
+            var paragrafo = document.getElementsByClassName("paragrafo");
+
+
+            function mudaTexto(){           
+
+            if(subtitulo.innerHTML == "A stilização de um elemento deve ser muito bem tarbalhada para dar credibilidade a página"){
+
+                subtitulo.innerHTML = "CSS Cascading Style Sheets"
+
+            }else{
+
+                subtitulo.innerHTML = "A stilização de um elemento deve ser muito bem tarbalhada para dar credibilidade a página";
+            }
+
+         }
+
+        function mudaAlinhamento(){
+
+            paragrafo[0].style.textAlign = "center";
+            setTimeout(minhaFuncao, 2000);
+
+            paragrafo[0].style.textAlign = "left";
+            setTimeout(minhaFuncao, 2000);
+
+            paragrafo[0].style.textAlign = "right";
+            setTimeout(minhaFuncao, 2000);
+
+        }
+
+
+        function mudaAlinhamento(){
+
+            paragrafo[0].style.textAlign = "center";
+   
+
+            //paragrafo[0].style.textAlign = "right";
+  
+
+            //paragrafo[0].style.textAlign = "left";           
+
+        }
+   }
+
+  </script> 
+ </body>    
+</html>
